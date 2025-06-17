@@ -1,8 +1,9 @@
 const jwt = require('jsonwebtoken')
 require('dotenv').config()
-const userModel = require('./DbModels/author.model')
-const blogModel = require('./DbModels/blog.model')
-require('mongoose')
+const userModel = require('../DbModels/author.model')
+const blogModel = require('../DbModels/blog.model');
+
+const mongoose = require('mongoose')
 
 
 

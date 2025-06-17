@@ -3,6 +3,8 @@ const express = require('express')
 
 const database = require('./dB/mongoDB')
 
+const DB = require('./dB/mongoDB')
+
 const bodyparser = require('body-parser')
 
 //Security
