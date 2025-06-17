@@ -1,5 +1,5 @@
 const express = require('express')
-const database = require('./DB/mongoDB')
+const database = require('./dB/mongoDB')
 const bodyparser = require('body-parser')
 const passport = require('passport')
 require('./auth/passportJWT')
