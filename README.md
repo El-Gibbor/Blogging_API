@@ -52,6 +52,7 @@ npm install
 
 # Run the server
 node index.js
+```
 
 ## API Base Url:
 https://api-blog-m07l.onrender.com
