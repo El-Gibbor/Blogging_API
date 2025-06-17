@@ -3,6 +3,8 @@
 A RESTful API for a blogging platform built with Node.js, MongoDB, and Passport.js. It supports user authentication, blog creation, management, and discovery.
 
 ---
+### Base URL:
+https://blogging-api-4kul.onrender.com/
 ## Features
 
 ### 1. User Authentication
