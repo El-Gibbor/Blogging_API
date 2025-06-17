@@ -1,15 +1,15 @@
-require('../authentication/passportJWT')
+require('../auth/passportJWT')
 
 const passport = require('passport')
 const express = require('express')
 const userRouter = express.Router()
 const validation = require('../validation/validation')
-const { getBlogById, 
-    createABlog, 
-    deleteBlogById, 
-    updateBlog, 
-    editBlog, 
-    getMyBlogs 
+const { getBlogById,
+    createABlog,
+    deleteBlogById,
+    updateBlog,
+    editBlog,
+    getMyBlogs
 } = require('../controller/blogpost')
 
 

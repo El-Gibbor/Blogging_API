@@ -1,7 +1,7 @@
 const express = require('express')
 const blogRouter = express.Router()
 const { getAllBlogs } = require('../controller/blogpost')
-require('../authentication/passportJWT')
+require('../auth/passportJWT')
 
 
 blogRouter.get('/allblogs', (req, res, next) => {

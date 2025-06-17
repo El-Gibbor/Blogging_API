@@ -2,7 +2,7 @@ const express = require('express')
 const blogRouter = express.Router()
 
 const blogController = require('../controller/blogpost')
-require('../authentication/passportJWT')
+require('../auth/passportJWT')
 
 
 blogRouter.post('/create', blogController.createABlog)

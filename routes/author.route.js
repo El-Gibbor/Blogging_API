@@ -1,4 +1,4 @@
-require('../authentication/passportJWT')
+require('../auth/passportJWT')
 
 const passport = require('passport')
 const express = require('express')

@@ -1,14 +1,14 @@
 //Express
 const express = require('express')
 
-const database = require('./database/mongoDB')
+const database = require('./DB/mongoDB')
 
 const bodyparser = require('body-parser')
 
 //Security
 const passport = require('passport')
 const rateLimit = require("express-rate-limit");
-require('./authentication/passportJWT')
+require('./auth/passportJWT')
 require('dotenv').config()
 
 //Middlewares
@@ -55,7 +55,7 @@ app.use('/blog', passport.authenticate('jwt', {session: false}), blogRouter)
 
 
 // //Databse
-database.connection()
+DB.connection()
 
 app.post('/auth/signup', validation.validateSignup, passport.authenticate('signup', { session: false }), account.signup)
 
