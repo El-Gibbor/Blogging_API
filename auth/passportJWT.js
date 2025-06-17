@@ -2,7 +2,7 @@ require('dotenv').config()
 const passport = require('passport')
 const jwt = require('jsonwebtoken')
 const passportjwt = require('passport-jwt')
-const userModel = require('../Models/author.model')
+const userModel = require('../DbModels/author.model')
 require('dotenv').config()
 const localStrategy = require('passport-local').Strategy
 const JWTStrategy = passportjwt.Strategy

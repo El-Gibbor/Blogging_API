@@ -12,8 +12,8 @@ const {
 require('dotenv').config()
 require('mongoose')
 
-const blogModel = require('../Models/blog.model')
-const authorModel = require('../Models/author.model')
+const blogModel = require('../Dbmodels/blog.model')
+const authorModel = require('../Dbmodels/author.model')
 
 // Get all blogs
 exports.getBlogs = (req, res, next) => {

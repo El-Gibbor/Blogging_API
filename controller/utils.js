@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken')
 require('dotenv').config()
-const userModel = require('../Models/author.model')
-const blogModel = require('../Models/blog.model')
+const userModel = require('../DbModels/author.model')
+const blogModel = require('../DbModels/blog.model')
 require('mongoose')
 
 
@@ -102,7 +102,7 @@ const queryBlogByState = async (req, res) => {
 // Generate Jwt
 const generateJWT = (user) => {
     try {
-        
+
         const payload = { _id: user._id, email: user.email, password: user.password, fullname: user.firstname + ' ' + user.lastname }
         const token = jwt.sign(payload, 'shhh_secret', { expiresIn: '1h' })
 
